@@ -1,0 +1,4 @@
+*.html eol=lf
+
+.gitignore eol=lf
+.gitattributes eol=lf
