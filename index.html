@@ -5,7 +5,6 @@
     <style>
         body {
             font-family: Consolas, monaco, monospace;
-            text-align: center;
             margin: 0px;
             width: 100%;
             height: 100%;
@@ -13,8 +12,7 @@
 
         .background {
             position: absolute;
-            backdrop-filter: blur(10px);
-            background-image: url("Background.png");
+            background-image: url("background.png");
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -29,19 +27,18 @@
         table {
             margin-left: auto;
             margin-right: auto;
-            font-size: 2em;
         }
     </style>
 </head>
 <body class="background">
-    <div style="background-color: white; max-width: 70em; margin: auto; height: 100%;">
+    <div style="background-color: white; max-width: 70em; margin: auto; display: flex; flex-direction: column;">
         <b>
         <br>
         <br>
-        <div style="font-size: 5em;">Berk Unver</div>
+        <div style="font-size: 5em; text-align: center;">Berk Unver</div>
         <br>
         <br>
-        <table cellspacing="50em">
+        <table cellspacing=50em style="text-align: center; font-size: 2em;">
             <tr>
                 <td><a href="Resume.pdf">Resume</a></td>
                 <td><a href="Portfolio.pdf">Portfolio</a></td>
@@ -50,20 +47,70 @@
 
             </tr>
         </table>
-        <div style="font-size: 3em;">Projects</div>
+        <div style="font-size: 3em; text-align: center;">Projects</div>
 
         <br>
-        <table cellspacing="40em">
+        <table cellspacing=40em style="text-align: center; font-size: 2em;">
             <tr>
                 <td><a href="https://github.com/BerkUnver/StealthSokoban">Sokoban Game</a></td>
                 <td><a href="https://www.youtube.com/watch?v=ZiG4rueYiJA">The Knight's Layer</a></td>
 
             </tr>
             <tr>
-                <td><a href="https://github.com/BerkUnver/Creed">Compiler Frontend</td>
-                <td><a href="https://github.com/BerkUnver/Zapper">WASM Interpreter</td>
+                <td><a href="https://github.com/BerkUnver/Creed">Compiler Frontend</a></td>
+                <td><a href="https://github.com/BerkUnver/Zapper">WASM Interpreter</a></td>
             </tr>
         </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Documentation of work on website: Images, Statement, supplemental materials on website (work that didn't make it into the exhibition, experiments, sketches, test prints, etc.) -->
+        <div style="font-size: 3em; text-align: center;">Sokoban Game Reflection</div>
+        <br>
+        <div style="max-width: 50em; margin: auto;">
+            <div>
+                To have a working demo of this project working in four months was very ambitious, and in some ways is a victim of that ambition. I had very little prior experience with 3D graphics and no experience whatsoever with sound, and tried to program as much as I could from scratch. I ran out of time to make a satisfying end for the demo, and was unable to make sound effects I was happy with.
+                <br>
+                <br>
+                My initial aim of this project was to create a visual language for puzzle design. I do not know how successful I have been at this. When you start designing games, there is a naive optimism that programming is hard and design is easy, and that your ideas for games are interesting and technical skill is your limitation. Yes, programming is hard, but design is also hard.
+                <br>
+                <br>
+                It's also a testament to the warping power of our influences. The initial idea for this game was a stealth game taking place on a grid, but my time as an intern at Thekla Inc. turned my mind towards sokoban (block-pushing) games. This game initially had a line-of-sight mechanic, but I removed it for a floodfill view mechanic. It became increasingly sokoban-like. I do not have a particularly strong interest in puzzle games compared to other genres, either. I need to keep a very close watch on how I absorb external influences.
+                <br>
+                <br>
+                I so badly want to cultivate my ability to have interesting, wonderful, and weird ideas. Right now, I am figuring it out.
+            </div>
+            <br>
+            <br>
+            <table style="text-align: center;">
+                <tr>
+                    <td width=50%>
+                        An early test of floodfill view.
+                        <img width=100% src="floodfill_view_test.png">
+                    </td>
+                    <td width=50%>
+                        From when everything was placeholders.
+                        <img width=100% src="old.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        A strangely beautiful graphics bug.
+                        <img width=100% src="artifact.png">
+                    </td>
+                    <td>
+                        A custom level editor for level design.
+                        <img width=100% src="editor.png">
+                    </td>
+                </tr>
+            </table>
+        </div>
         </b>
     </div>
 </body>
